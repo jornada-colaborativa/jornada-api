@@ -1,0 +1,24 @@
+version: '3.9'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017-27019:27017-27019
+    volumes:
+      - mongodb:/data/db
+      - mongoconfig:/data/configdb
+    environment:
+      - MONGO_INITDB_DATABASE=apinapratica
+      - MONGO_INITDB_ROOT_USERNAME=apinapratica
+      - MONGO_INITDB_ROOT_PASSWORD=m*ng*
+    networks:
+      - mongo_net
+    
+volumes:
+  mongodb:
+  mongoconfig:
+
+networks:
+  mongo_net:
+    driver: bridge

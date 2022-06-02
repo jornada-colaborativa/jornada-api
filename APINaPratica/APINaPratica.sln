@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{44C57FC4-0ABB-4200-BF06-DF3842A39AA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APINaPratica.API", "src\APINaPratica.API\APINaPratica.API.csproj", "{1D064B1C-65D0-4176-8EBF-558F1989C58B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APINaPratica.Domain", "src\APINaPratica.Domain\APINaPratica.Domain.csproj", "{9F180C90-2FBB-48A3-8328-7B8AB16C799E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APINaPratica.Dto", "src\APINaPratica.Dto\APINaPratica.Dto.csproj", "{0B097EF9-4B58-438F-8C95-81BC61E4015B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APINaPratica.Infra.Mongo", "src\APINaPratica.Infra.Mongo\APINaPratica.Infra.Mongo.csproj", "{DCAC6BD7-CAF4-4DE9-9516-EB4C51E818C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APINaPratica.Application", "src\APINaPratica.Application\APINaPratica.Application.csproj", "{4241206B-1464-47D8-A664-52B61B092F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APINaPratica.UoW", "src\APINaPratica.UoW\APINaPratica.UoW.csproj", "{641F04C2-BC02-40D4-AE6F-1977B9B06129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D064B1C-65D0-4176-8EBF-558F1989C58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D064B1C-65D0-4176-8EBF-558F1989C58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D064B1C-65D0-4176-8EBF-558F1989C58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D064B1C-65D0-4176-8EBF-558F1989C58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F180C90-2FBB-48A3-8328-7B8AB16C799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F180C90-2FBB-48A3-8328-7B8AB16C799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F180C90-2FBB-48A3-8328-7B8AB16C799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F180C90-2FBB-48A3-8328-7B8AB16C799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B097EF9-4B58-438F-8C95-81BC61E4015B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B097EF9-4B58-438F-8C95-81BC61E4015B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B097EF9-4B58-438F-8C95-81BC61E4015B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B097EF9-4B58-438F-8C95-81BC61E4015B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAC6BD7-CAF4-4DE9-9516-EB4C51E818C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAC6BD7-CAF4-4DE9-9516-EB4C51E818C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAC6BD7-CAF4-4DE9-9516-EB4C51E818C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAC6BD7-CAF4-4DE9-9516-EB4C51E818C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4241206B-1464-47D8-A664-52B61B092F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4241206B-1464-47D8-A664-52B61B092F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4241206B-1464-47D8-A664-52B61B092F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4241206B-1464-47D8-A664-52B61B092F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{641F04C2-BC02-40D4-AE6F-1977B9B06129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641F04C2-BC02-40D4-AE6F-1977B9B06129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641F04C2-BC02-40D4-AE6F-1977B9B06129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641F04C2-BC02-40D4-AE6F-1977B9B06129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D064B1C-65D0-4176-8EBF-558F1989C58B} = {44C57FC4-0ABB-4200-BF06-DF3842A39AA1}
+		{9F180C90-2FBB-48A3-8328-7B8AB16C799E} = {44C57FC4-0ABB-4200-BF06-DF3842A39AA1}
+		{0B097EF9-4B58-438F-8C95-81BC61E4015B} = {44C57FC4-0ABB-4200-BF06-DF3842A39AA1}
+		{DCAC6BD7-CAF4-4DE9-9516-EB4C51E818C8} = {44C57FC4-0ABB-4200-BF06-DF3842A39AA1}
+		{4241206B-1464-47D8-A664-52B61B092F74} = {44C57FC4-0ABB-4200-BF06-DF3842A39AA1}
+		{641F04C2-BC02-40D4-AE6F-1977B9B06129} = {44C57FC4-0ABB-4200-BF06-DF3842A39AA1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31B5E069-33D5-48DD-A3D6-EE0852E104C3}
+	EndGlobalSection
+EndGlobal
