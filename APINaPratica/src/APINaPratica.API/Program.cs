@@ -1,3 +1,4 @@
+/*Responsável pela inicialização da aplicação*/
 using APINaPratica.Application.Services;
 using APINaPratica.Application.Services.Interfaces;
 using APINaPratica.Domain.Interfaces.Repositories;
@@ -11,17 +12,18 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+///Configuração da documentação automática OpenAPI
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+/*Trata a injeção de dependência adicionando ao escopo de trabalho correto*/
 builder.Services.AddScoped<IAnimalAppService, AnimalAppService>();
 builder.Services.AddScoped<IAnimalRepository, AnimalRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IMongoContext, MongoContext>();
+///Configuração da persistência do mongo
 MongoDbPersistence.Configure();
-
-
 
 var app = builder.Build();
 

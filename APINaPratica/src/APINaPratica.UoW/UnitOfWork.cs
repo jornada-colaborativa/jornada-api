@@ -2,6 +2,10 @@
 
 namespace APINaPratica.UoW
 {
+    /// <summary>
+    /// responsável pela coordenação da transação quando temos 
+    /// mais de um MongoDB ou seja o mesmo está trabalhando em cluster.
+    /// </summary>
     public class UnitOfWork : IUnitOfWork
     {
         private readonly IMongoContext _context;

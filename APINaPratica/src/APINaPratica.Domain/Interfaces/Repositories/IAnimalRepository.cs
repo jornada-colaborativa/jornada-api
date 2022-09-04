@@ -1,12 +1,16 @@
-﻿using APINaPratica.Domain.Entities.Animal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/* Parte do código que informamos para o compilador que 
+ * bibliotecas serão utilizadas para poder rodar e compilar
+ * esta classe
+ */
+using APINaPratica.Domain.Entities.Animal;
 
 namespace APINaPratica.Domain.Interfaces.Repositories
 {
+    /// <summary>
+    /// Repositório que herda do repositório principal
+    /// passando a informação que pertende a classe
+    /// Animal
+    /// </summary>
     public interface IAnimalRepository : IRepository<Animal>
     {
     }

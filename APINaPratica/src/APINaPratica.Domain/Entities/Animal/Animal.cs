@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
+/*Namespace que estará contida a classe dentro da aplicação*/
 namespace APINaPratica.Domain.Entities.Animal
 {
+    /// <summary>
+    /// Classe animal que representa de forma simples um animal.
+    /// 
+    /// </summary>
     public class Animal
     {
+        /// <summary>
+        /// Id que é utilizado no repositório de dados como o código 
+        /// unico que representa este animal.
+        /// </summary>
         public Guid Id { get; set; }
         public DateTime Atualizacao { get; set; }
         public DateTime Cadastro { get; set; }

@@ -4,6 +4,10 @@ using MongoDB.Driver;
 
 namespace APINaPratica.Infra.Mongo.Context
 {
+    /// <summary>
+    /// Classe utilizada para o contexto de acesso a dados
+    /// do MongoDB
+    /// </summary>
     public class MongoContext : IMongoContext
     {
         private IMongoDatabase Database { get; set; }

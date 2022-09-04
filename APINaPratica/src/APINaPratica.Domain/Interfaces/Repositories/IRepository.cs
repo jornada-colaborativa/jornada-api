@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace APINaPratica.Domain.Interfaces.Repositories
+﻿namespace APINaPratica.Domain.Interfaces.Repositories
 {
+    /// <summary>
+    /// Interface base do Repository onde todas as classes de 
+    /// repositório irão ter por herança os mesmos métodos para 
+    /// chamada do repositório
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public interface IRepository<TEntity> : IDisposable where TEntity : class
     {
         void Add(TEntity obj);

@@ -4,6 +4,10 @@ using MongoDB.Bson.Serialization.Conventions;
 
 namespace APINaPratica.Infra.Mongo.Persistence
 {
+    /// <summary>
+    /// responsável configuração e inicialização da persistência 
+    /// e mapeamento dos objetos no repositório.
+    /// </summary>
     public static class MongoDbPersistence
     {
         public static void Configure()

@@ -7,6 +7,9 @@ namespace APINaPratica.Application.Services
 {
     public class AnimalAppService : IAnimalAppService
     {
+        /// <summary>
+        /// Injeção de dependência utilizada para acessar o repositório
+        /// </summary>
         private readonly IAnimalRepository _animalRepository;
         private readonly IUnitOfWork _unitOfWork;
 
@@ -15,6 +18,12 @@ namespace APINaPratica.Application.Services
             _animalRepository = animalRepository;
             _unitOfWork = unitOfWork;
         }
+        /// <summary>
+        /// responsável por adicionar no repositório
+        /// </summary>
+        /// <param name="record"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<AnimalDto> AddAnimalAsync(AnimalDto record)
         {
 
@@ -67,7 +76,11 @@ namespace APINaPratica.Application.Services
             return null;
 
         }
-
+        /// <summary>
+        /// resposável por deletar do repositório
+        /// </summary>
+        /// <param name="record"></param>
+        /// <returns></returns>
         public async Task<bool> DeleteAnimalAsync(AnimalDto record)
         {
             try
@@ -84,6 +97,10 @@ namespace APINaPratica.Application.Services
             }
         }
 
+        /// <summary>
+        /// responsável por recuperar do repositório
+        /// </summary>
+        /// <returns></returns>
         public async Task<IList<AnimalDto>> GetAllAnimalAsync()
         {
             IList<AnimalDto> animais = new List<AnimalDto>();
@@ -111,6 +128,11 @@ namespace APINaPratica.Application.Services
             }
             return animais;
         }
+        /// <summary>
+        /// Responsável por recuperar do repositório
+        /// </summary>
+        /// <param name="record"></param>
+        /// <returns></returns>
         public async Task<AnimalDto> GetAnimalAsync(AnimalDto record)
         {
 
@@ -132,6 +154,12 @@ namespace APINaPratica.Application.Services
             return animalDto;
         }
 
+        /// <summary>
+        /// responsável por atualizar no repositório
+        /// </summary>
+        /// <param name="record"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public async Task<AnimalDto> UpdateAnimalAsync(AnimalDto record)
         {
             try

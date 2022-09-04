@@ -3,6 +3,11 @@ using MongoDB.Bson.Serialization;
 
 namespace APINaPratica.Infra.Mongo.EntityConfig
 {
+    /// <summary>
+    /// Mapeamento da classe animal com os objetos de repositório 
+    /// de dados utilizado para que o repository e os drivers do 
+    /// repositorio de dados saibam qual é cada membro da classe
+    /// </summary>
     public class AnimalMap
     {
         public static void Configure()

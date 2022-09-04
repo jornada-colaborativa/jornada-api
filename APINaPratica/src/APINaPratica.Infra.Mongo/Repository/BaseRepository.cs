@@ -4,6 +4,11 @@ using ServiceStack;
 
 namespace APINaPratica.Infra.Mongo.Repository
 {
+    /// <summary>
+    /// Classe que efetivamente executa a criação, atualização
+    /// deleção e recuperação de dados do repositório de dados.
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public abstract class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         protected readonly IMongoContext Context;
@@ -43,6 +48,10 @@ namespace APINaPratica.Infra.Mongo.Repository
             Context.AddCommand(() => DbSet.DeleteOneAsync(Builders<TEntity>.Filter.Eq("_id", id)));
         }
 
+        /// <summary>
+        /// utilizado para informar para o garbage collector que 
+        /// ele pode ser removido da memória.
+        /// </summary>
         public void Dispose()
         {
             Context?.Dispose();
